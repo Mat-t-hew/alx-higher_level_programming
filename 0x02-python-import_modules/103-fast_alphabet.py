@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-print(*(map(chr, range(65, 91))), sep="")
-
+getattr(__import__('sys'), 'stdout').write(''.join(map(chr, range(65, 91))))
