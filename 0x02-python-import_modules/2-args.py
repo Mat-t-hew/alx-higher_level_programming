@@ -6,7 +6,7 @@ def main():
     arg_count = len(sys.argv) - 1
 
     if arg_count == 0:
-        print("0 arguments:")
+        print("0 arguments.")
     elif arg_count == 1:
         print("1 argument:")
     else:
@@ -18,4 +18,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
