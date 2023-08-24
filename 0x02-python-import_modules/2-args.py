@@ -6,11 +6,11 @@ def main():
     arg_count = len(sys.argv) - 1
 
     if arg_count == 0:
-        print("Number of arguments:.")
+        print("0 arguments:")
     elif arg_count == 1:
-        print("Number of argument:")
+        print("1 argument:")
     else:
-        print("Number of arguments:")
+        print("{} arguments:".format(arg_count))
 
     for i, arg in enumerate(sys.argv[1:], 1):
         print("{}: {}".format(i, arg))
