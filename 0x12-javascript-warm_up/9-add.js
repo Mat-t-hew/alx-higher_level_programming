@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const sum = (function add(a, b) {
+const sum = (function (a, b) {
   return parseInt(a) + parseInt(b);
 })(process.argv[2], process.argv[3]);
 
