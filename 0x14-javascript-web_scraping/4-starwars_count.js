@@ -11,7 +11,7 @@ request.get(apiUrl, function (error, response, body) {
     for (let i = 0; i < films.length; i++) {
       const charList = films[i].characters;
       for (let j = 0; j < charList.length; j++) {
-        if (charList[j] === 'https://swapi-api.alx-tools.com/api/people/18/') {
+        if (charList[j].includes('18')) { // Corrected comparison
           countWedge += 1;
         }
       }
