@@ -1,6 +1,6 @@
-$('document').ready(function () {
-  $('INPUT#btn_translate').click(translate);
-  $('INPUT#language_code').focus(function () {
+$(document).ready(function () {
+  $('#btn_translate').click(translate);
+  $('#language_code').focus(function () {
     $(this).keydown(function (e) {
       if (e.keyCode === 13) {
         translate();
@@ -9,9 +9,9 @@ $('document').ready(function () {
   });
 });
 
-function translate () {
+function translate() {
   const url = 'https://www.fourtonfish.com/hellosalut/hello/';
-  $.get(url + $.param({ lang: $('INPUT#language_code').val() }), function (data) {
-    $('DIV#hello').html(data.hello);
+  $.get(url + $.param({ lang: $('#language_code').val() }), function (data) {
+    $('#hello').html(data.hello);
   });
 }
